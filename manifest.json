@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "ahdbfork",
+  "description": "aquarhead's douban fork",
+  "version": "0.1",
+  "permissions": [
+    "*://*/"
+  ],
+  "homepage_url": "http://blog.teawhen.com/aquarhead",
+  "content_scripts": [
+    {
+      "matches": ["*://*.douban.com/subject/*"],
+      "js": ["jquery.js", "aquarhead-douban-fork.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

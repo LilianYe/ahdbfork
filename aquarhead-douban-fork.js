@@ -1,0 +1,1 @@
+$('.related_info h2').first().before($('#db-tags-section'));
